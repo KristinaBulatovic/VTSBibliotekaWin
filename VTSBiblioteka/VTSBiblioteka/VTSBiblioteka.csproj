@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BFDE425C-C449-4110-91CD-FDA8CAAB0782}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VTSBiblioteka</RootNamespace>
+    <AssemblyName>VTSBiblioteka</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=5.0.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\TiNa\MySql.Data.DLL</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddAuthor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAuthor.Designer.cs">
+      <DependentUpon>AddAuthor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddAuthorPractice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAuthorPractice.Designer.cs">
+      <DependentUpon>AddAuthorPractice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCategory.Designer.cs">
+      <DependentUpon>AddCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCategoryPractice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCategoryPractice.Designer.cs">
+      <DependentUpon>AddCategoryPractice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPublisher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPublisher.Designer.cs">
+      <DependentUpon>AddPublisher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPublisherPractice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPublisherPractice.Designer.cs">
+      <DependentUpon>AddPublisherPractice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BorrowingBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BorrowingBooks.Designer.cs">
+      <DependentUpon>BorrowingBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Config.cs" />
+    <Compile Include="Library.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Library.Designer.cs">
+      <DependentUpon>Library.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LibraryStudent.Designer.cs">
+      <DependentUpon>LibraryStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MySQL.cs" />
+    <Compile Include="Print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print.Designer.cs">
+      <DependentUpon>Print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintStatistics.Designer.cs">
+      <DependentUpon>PrintStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RecordOfBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecordOfBooks.Designer.cs">
+      <DependentUpon>RecordOfBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RecordOfBooksPractice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecordOfBooksPractice.Designer.cs">
+      <DependentUpon>RecordOfBooksPractice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RecordOfMembers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecordOfMembers.Designer.cs">
+      <DependentUpon>RecordOfMembers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RediscoverBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RediscoverBooks.Designer.cs">
+      <DependentUpon>RediscoverBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistics.Designer.cs">
+      <DependentUpon>Statistics.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddAuthor.resx">
+      <DependentUpon>AddAuthor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddAuthorPractice.resx">
+      <DependentUpon>AddAuthorPractice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCategory.resx">
+      <DependentUpon>AddCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCategoryPractice.resx">
+      <DependentUpon>AddCategoryPractice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPublisher.resx">
+      <DependentUpon>AddPublisher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPublisherPractice.resx">
+      <DependentUpon>AddPublisherPractice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BorrowingBooks.resx">
+      <DependentUpon>BorrowingBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Library.resx">
+      <DependentUpon>Library.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LibraryStudent.resx">
+      <DependentUpon>LibraryStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print.resx">
+      <DependentUpon>Print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintStatistics.resx">
+      <DependentUpon>PrintStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecordOfBooks.resx">
+      <DependentUpon>RecordOfBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecordOfBooksPractice.resx">
+      <DependentUpon>RecordOfBooksPractice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecordOfMembers.resx">
+      <DependentUpon>RecordOfMembers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RediscoverBooks.resx">
+      <DependentUpon>RediscoverBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics.resx">
+      <DependentUpon>Statistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pictures\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pictures\change_pass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pictures\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pictures\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pictures\lib-logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
